@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>shop</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="header-left">
+                <a href="#"><h2 class="logo">MyShop</h2></a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./signup.html">SignUp</a></li>
+                    <li><a href="./Cart.html">My Cart</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="grid-me">
+            <div class="left">
+                <div class="first">
+                    <div class="row">
+                        <h3>Rating</h3>
+                        <input type="range" min="0" max="5" id="range">
+                    </div>
+                </div>
+                <div class="first">
+                    <div class="row">
+                        <h3>Price Range</h3>
+                        <div class="inputB"><input type="checkbox" id="p1"><button id="priceOne"><label for="p1">$0 to $50</label></button></div>
+                        <div class="inputB"><input type="checkbox" id="p2"><button id="priceTwo"><label for="p2">$25 to $50</label></button></div>
+                        <div class="inputB"><input type="checkbox" id="p3"><button id="priceThree"><label for="p3">$50 to $75</label></button></div>
+                        <div class="inputB"><input type="checkbox" id="p4"><button id="priceFour"><label for="p4">$75 to $100</label></button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <input type="text" placeholder="search">
+                    <div class="filterbtns">
+                        <button onclick="showData('All')">All</button>
+                        <button onclick="showData('Mens Clothings')">Mens</button>
+                        <button onclick="showData('Womens Clothings')">Womens</button>
+                        <button onclick="showData('Jevellery')">Jevellery</button>
+                        <button onclick="showData('Electronics')">Electronics</button>
+                    </div>
+                </div>
+
+                <div class="bottom" id="bottomData">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./shop.js"></script>
+</body>
+
+</html>

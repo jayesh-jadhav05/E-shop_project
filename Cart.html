@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./cart.css"> -->
+    <title>My Cart</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Header-left">
+                <a href="./shop.html"><h2 class="logo">MyShop</h2></a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./signup.html">SignUp</a></li>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="./shop.html">ShopNow</a></li>
+                    <li><a href="./profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="ShopNow">
+        <div class="shopContainer">
+            <div class="left_most">
+                <h2>My Cart</h2>
+                <div class="products grid" id="cartData">
+                </div>
+            </div>
+
+            <div class="right_most">
+                <div class="checkOut">
+                    <h5>Checkout List</h5>
+                     <div class="check_price" id="addcartproduct">
+                        
+                    </div>
+
+                    <div class="total-price">
+                        <h6>Total</h6>
+                        <h6 id="TotalPrice">Rs 900 /-</h6>
+                    </div> 
+                </div>
+                <button class="btn">Click To Checkout</button> 
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
+
+
+
+
